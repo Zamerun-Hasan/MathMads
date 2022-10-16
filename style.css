@@ -1,0 +1,318 @@
+.WebContainer {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-image: url(nbg.png);
+    /*body default*/
+}
+
+div.lo {
+    box-shadow: 1px 2px 15px 1px white;
+}
+
+p.wm
+
+/*Watermark Left Top corner*/
+    {
+    color: black;
+    font-family: trajan;
+    font-size: 20px;
+    animation-name: wm;
+    animation-delay: 2s;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+
+}
+
+@keyframes wm {
+    20% {
+        color: white;
+    }
+
+    40% {
+        color: lightblue;
+    }
+
+    60% {
+        color: lightgreen;
+    }
+
+    80% {
+        color: olive;
+    }
+
+    100% {
+        color: greenyellow;
+    }
+
+
+
+}
+
+
+h2.mh
+
+/*heading*/
+    {
+
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    font-family: sans-serif;
+    box-shadow: 1px 2px 15px 1px white;
+    border-radius: 23px;
+}
+
+ul.mnu {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+li {
+
+    height: 28px;
+    margin: 2px;
+    padding: 3px;
+
+
+
+
+
+}
+
+
+
+div.mnu {
+    /*Menu Block div*/
+    position: absolute;
+    display: none;
+    /* block is hidden*/
+    text-align-last: center;
+    width: 300px;
+
+
+    box-shadow: 2px 2px 20px 4px #E1D2FF;
+    background-color: rgba(0, 0, 25, 0.8);
+    /*rgba(180,100,89,0.80);*/
+    border-radius: 12px;
+    animation-name: mdis;
+    animation-duration: 0.7s;
+
+
+
+}
+
+@keyframes mdis
+
+/*Menu Animation*/
+    {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes lsel {
+    33% {
+        font-size: 24px;
+    }
+
+    100% {
+        font-size: 26px;
+    }
+}
+
+
+.mnu a {
+
+    font-family: verdana;
+    font-size: 24px;
+    color: white;
+
+
+    text-decoration: none;
+
+
+
+}
+
+.mnu a:hover li {
+    border-radius: 10px;
+    border: 2px outset #C1F807;
+    animation-name: lsel;
+    animation-duration: 0.3s;
+    font-size: 26px;
+
+    color: #C1F807;
+    background-color: rgba(150, 100, 89, 0.5);
+    /*bgc.prev:#282926*/
+
+}
+
+
+div.ia {
+    background-image: url(ee.jpg);
+    /*Interactive Area block div*/
+
+    font-family: rockwell;
+    font-size: 23px;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 1px 2px 15px 1px white;
+    border-radius: 7px;
+}
+
+@keyframes ina {
+    20% {
+        box-shadow: 1px 2px 15px 1px white;
+    }
+
+    40% {
+        box-shadow: 2px 2px 30px 1px #ACF58C;
+    }
+
+    60% {
+        box-shadow: 3px 2px 15px 1px #ACF58C;
+    }
+
+    80% {
+        box-shadow: 2px 2px 30px 1px #ACF58C;
+    }
+
+    100% {
+        box-shadow: 1px 2px 15px 1px white;
+    }
+
+
+
+}
+
+div.ia:hover {
+    animation-name: ina;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+p.ans
+
+/*answer para of nteractive Area block div*/
+    {
+
+    color: black;
+}
+
+div.frm {
+    /*form block of Sign Up form*/
+    box-shadow: 1px 2px 15px 1px white;
+    border-radius: 7px;
+    background-image: url(fobg.jpg);
+    font-family: Verdana;
+    font-size: 23px;
+    border: 2px solid black;
+    color: white;
+}
+
+p.lg1
+
+/*forward block[sign up-form]*/
+    {
+    font-size: 40px;
+    font-family: cursive;
+}
+
+p.lg2 {
+    font-size: 13px;
+}
+
+
+button.ans {
+    border: 4px solid green;
+    outline: none;
+    background-blend-mode: luminosity;
+    background-color: #C1F7A9;
+    color: black;
+    padding: 11px;
+    font-size: 18px;
+    font-family: georgia;
+    border-radius: 11px;
+    cursor: pointer;
+
+}
+
+button.res {
+    border: 4px solid #C30000;
+    outline: none;
+    background-blend-mode: luminosity;
+    background-color: #FBCCDA;
+    color: black;
+    padding: 11px;
+    font-size: 18px;
+    font-family: Ariel;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+div.ans {
+    width: 860px;
+    background-image: linear-gradient(to bottom right, #F9F28D, #F5C202);
+
+    font-size: 19px;
+}
+
+input {
+    width: 10%;
+    outline: none;
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 38px;
+    box-sizing: border-box;
+}
+
+input[type=number],
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 20%;
+    padding: 10px 3px;
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 38px;
+    box-sizing: border-box;
+
+}
+
+input [type=radio] {
+    width: 20%;
+
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+    border-radius: 38px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 6%;
+    padding: 10px 3px;
+    margin: 8px 0;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 38px;
+    box-sizing: border-box;
+}

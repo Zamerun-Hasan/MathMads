@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Sign Up:MathMads
+  </title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="icon.png">
+
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <img src="mnblo.png" style="display: none;">
+  <div class="lo">
+    <p class="wm" style="position:fixed;right:30px;bottom: 4px;">Made By ZamerunHasan</p>
+    <h1> <a href="index.html"><img src="mthlo.png" width="240"></a></h1>
+
+
+
+  </div>
+
+  <button style="background: none;outline: none;border: none;cursor:pointer; " onclick="drop()" id=but><img
+      src="mnulo.png" width="44"></button>
+
+  <div class="mnu" id=mn>
+
+    <ul class="mnu" type="disc">
+      <a href="index.html">
+        <li>Home</li>
+      </a>
+      <a href="fact.html">
+        <li> Factorial</li>
+      </a>
+      <a href="fib.html">
+        <li>Fibonacci</li>
+      </a>
+      <a href="prim.html">
+        <li>Prime Numbers</li>
+      </a>
+      <a href="pal.html">
+        <li>Palindrome</li>
+      </a>
+      <a href="eqn.html">
+        <li>Equation Evaluation</li>
+      </a>
+
+    </ul>
+
+
+
+
+  </div>
+
+
+  <div class="mh">
+
+    <h2 class="mh" id=suh>Sign Up</h2>
+  </div>
+
+
+  <div class="frm" id=f1>
+    <form>
+      First Name: <input id=t1 type=text placeholder="eg.Tony">
+      <p id="p0" style="color:red;font-size:13px;"></p>
+      <br>
+      Last Name: <input id=t2 type=text placeholder="eg.Stark">
+      <br><br>
+      Gender: <input name="g" type=radio value="MALE">MALE
+      <input name="g" type=radio value="FEMALE">FEMALE
+      <input name="g" type=radio value="Other">Other
+      <br>
+      <br>
+      Date Of Birth: <input id=d type=date>
+      <br>
+      <br>
+      Email ID: <input type=email id=g placeholder="eg.abc@mail.com">
+      <br>
+      <br>
+      Mobile No:
+      <select>
+        <option value="1">Bangladesh+88</option>
+        <option value="2">India+91</option>
+        <option value="3">UK +44</option>
+        <option value="4">China +86</option>
+        <option value="5">Russia+7</option>
+      </select>
+      <input type=number
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        placeholder="1234567890" maxlength="10">
+      <br><br>
+      Password: <input id="ps" type=password placeholder="use char,dig,syb">
+      <p id=p2 style="color:red;font-size:13px;"></p>
+      <br>
+      Confirm Password: <input id="cps" type=password placeholder="confirm paasword">
+      <p id=p1 style="color:red;font-size:13px;"></p>
+      <br>
+      <input type="button" id=u value="SUBMIT" onclick="sub()">
+      <br>
+      <p></p>
+    </form>
+  </div>
+
+</body>
+
+</html>
